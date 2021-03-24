@@ -1,0 +1,130 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+    margin: 0 auto; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+// .fixed-header {
+//     position: fixed;
+//     z-index:999;
+//     height: 50px;
+//     }
+
+section {
+    padding: 0 1rem;
+
+    .content-wrapper {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 700px;
+    }
+    
+}
+
+.page-wrapper {
+    width:100%;
+    min-height: 88vh;
+    display: flex;
+    // flex-direction: column;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    // align-items: center;
+    justify-content: center;
+    
+ 
+
+    .content-text {
+        margin: 0 ;
+        text-align: center;
+    } 
+} 
+
+
+
+// Typography
+
+h1, h2{
+    
+    color: #303030;
+    /* font-size: 30px!important; */
+    font-size:2.8vw!important;
+    font-weight: 600!important;
+    line-height: 4vw!important;
+    text-transform: none;
+    overflow: hidden;
+    
+}
+
+h3, h4 {
+    font-style: normal;
+    font-weight: bold!important;
+    font-size: 22px!important;
+    line-height: 30px;
+    color: #050506;
+    padding-bottom: 0px;
+}
+
+p {
+
+    // font-size: 18px;
+    // line-height: 28px;
+    // font-weight:normal;
+    // color: #26324b;
+
+    font-weight: 400;
+    font-size: 18px;
+    color: #0e2f4b;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+
+}
+
+.purple-bnt, .red-bnt {
+
+    font-size: 20px!important; 
+    padding: 10px 20px!important;
+    text-decoration: none!important;  
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 400;
+    margin: 10px!important; 
+    line-height: 25px!important;
+}
+
+.purple-bnt:hover {
+
+    background-color: #C4282C;
+}
+
+.mat-card {
+    background-color: white !important;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08)!important;
+    color: #0a0e1f;
+    border: 0 solid #efefef;
+    margin: 1.5rem;
+    border-radius: 10px;
+    min-width: 320px;
+    width: calc(28% - 16px);
+     justify-content: center;
+    // align-self: flex-start
+    //justify-content: flex-start;
+}
+
+// .page-wrapper:first-child {
+//     // width: 60%;
+//     // display: flex;
+//     // flex-direction: column;
+//     flex-direction: row;
+//     align-items: stretch;
+//     // flex-wrap: wrap;
+//     // padding: 2.5rem;
+//     justify-content: flex-start!important;
+
+// }
+
+
+

@@ -1,0 +1,69 @@
+<mat-sidenav-container class="header-style">
+    <mat-sidenav #sidenav position="start">
+
+        <mat-nav-list>
+            <span class="closebtn" (click)="sidenav.toggle()">
+                <mat-icon>clear</mat-icon>
+            </span>
+            <a mat-list-item class="text-menu" [routerLink]="'/'">
+                <mat-icon>home</mat-icon>Home
+            </a>
+            <a mat-list-item class="text-menu" [routerLink]="'/create-contact'">
+                <mat-icon>insert_emoticon</mat-icon> About Me
+            </a>
+            <a mat-list-item class="text-menu" [routerLink]="'/category-list'">
+                <mat-icon>list_alt</mat-icon> All Categories
+            </a>
+            <a mat-list-item class="text-menu" [routerLink]="'/tags-list'">
+                <mat-icon>view_comfy</mat-icon> All Tags
+            </a>
+            <a mat-list-item class="text-menu" [routerLink]="'/contacts'">
+                <mat-icon>folder_open</mat-icon> Projects
+            </a>
+            <a mat-list-item class="text-menu" [routerLink]="'/contacts'">
+                <mat-icon>notifications_active</mat-icon> Contacts
+            </a>
+
+            <mat-expansion-panel>
+
+                <mat-expansion-panel-header>
+
+                    <mat-panel-title>
+                        <a mat-list-item class="text-menu" [routerLink]="'/contacts'">
+                            <mat-icon>code</mat-icon> Try it simple
+                        </a>
+                        <!-- <mat-icon>notifications_active</mat-icon> Contacts -->
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>Development</p>
+                <p>Testing</p>
+                <p>Scrapping</p>
+            </mat-expansion-panel>
+            <a mat-list-item class="text-menu" [routerLink]="'/accounts'">
+                <mat-icon>smoking_rooms</mat-icon>Funny Stories
+            </a>
+
+        </mat-nav-list>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+
+        <mat-toolbar color="primary" class="fixed-header">
+            <button mat-icon-button aria-label="Menu" (click)="sidenav.open()">
+                <mat-icon class="icon-menu">menu</mat-icon>
+            </button>
+
+            <span class="example-fill-remaining-space"></span>
+
+            <!-- <button mat-icon-button (click)="search.open()">
+                <mat-icon class="header-search-icon">search</mat-icon>
+            </button> -->
+        </mat-toolbar>
+        <!-- <div style="height: 8vh;"> -->
+
+        <router-outlet></router-outlet>
+        <!-- </div> -->
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

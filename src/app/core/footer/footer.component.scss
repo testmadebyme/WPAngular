@@ -1,0 +1,38 @@
+section {
+    background-color: #ba4d89;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.facebook,
+.telegram,
+.linkedin,
+.github {
+    margin: 15px;
+    color: white;
+}
+
+.copyright,
+.social {
+    margin: 15px;
+}
+
+.facebook:hover {
+    color: grey;
+}
+
+p{
+    color: white;
+    padding: 0px;
+}
+
+.support {
+    display: flex;
+    justify-content: center;
+
+    img {
+        padding: 0 1rem;
+    }
+}

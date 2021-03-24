@@ -1,0 +1,33 @@
+<section class="best-posts">
+
+    <!-- <div *ngIf="count">Found {{ count }} posts</div> -->
+
+    <div class="page-wrapper">
+
+        <mat-card class="article" *ngFor="let post of posts">
+
+            <img matCardImage *ngIf="post['_embedded']['wp:featuredmedia']"
+                [src]="post['_embedded']['wp:featuredmedia'][0]['media_details'].sizes['medium'].source_url">
+            <mat-card-header>
+                <mat-card-title>{{ post.title.rendered }}</mat-card-title>
+                <mat-card-subtitle>{{ post.date_gmt | date }}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content [innerHTML]="post.excerpt.rendered"></mat-card-content>
+            <mat-card-actions align="start">
+                <a mat-button [routerLink]="['/', 'post', post.id]">Детальніше</a>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+    <div class="content-wrapper">
+        <div class="inviting-load-posts">
+            <h2>Тобi цікаво ?</h2>
+            <p>
+                Ще більше дописів на тебе чекає далі ...
+            </p>
+
+            <button mat-raised-button color="primary" class="purple-bnt" (click)="loadMore($event)">Завантажити
+                <mat-icon>redo</mat-icon>
+            </button>
+        </div>
+    </div>
+</section>

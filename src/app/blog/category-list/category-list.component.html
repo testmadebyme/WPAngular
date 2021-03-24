@@ -1,0 +1,15 @@
+<section class="all-category">
+    <div class="page-wrapper">
+        <div fxLayout="row wrap" fxLayoutGap="16px">
+            <mat-card fxFlex="75%" class="card-wrapper">
+                <h3>Категорії</h3>
+                <!-- <mat-list [routerLink]="['/category-posts', item.id]" -->
+                    <mat-list (click)='getNavigation(item)'
+                 *ngFor="let item of categories$ | async">
+                    <mat-list-item role="listitem">{{item.name}}
+                    </mat-list-item>
+                </mat-list>
+            </mat-card>
+        </div>
+    </div>
+</section>

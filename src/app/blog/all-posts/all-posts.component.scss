@@ -1,0 +1,43 @@
+.input-wrapper {
+
+  width:94%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem auto;
+
+}
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    /* padding: 12px; */
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    text-align: center;
+  }
+
+
+.input-icons .mat-icon { 
+    position: absolute; 
+} 
+  
+.input-icons { 
+    width: 100%; 
+    margin-bottom: 5px; 
+} 
+  
+.mat-icon { 
+    padding: 10px; 
+    color: black; 
+    opacity: 0.12;
+    min-width: 50px; 
+    text-align: center; 
+    font-size: 32px!important;
+    font-weight: lighter!important;
+} 
